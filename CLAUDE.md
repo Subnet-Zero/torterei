@@ -10,7 +10,7 @@ Keine Domain registriert (Stand: Juni 2026).
 - Reines HTML5 & CSS3 — kein JavaScript, kein Framework, keine Build-Tools
 - Keine externen Abhängigkeiten (keine CDNs, keine npm-Pakete)
 - Mobile-first, responsives Layout via CSS Flexbox/Grid
-- Alle Bilder lokal unter `assets/images/`
+- Alle Bilder lokal unter `assets/images/` (Format: PNG)
 
 ## Dateistruktur
 
@@ -29,7 +29,7 @@ torterei/
 
 - HTML-Einrückung: 2 Leerzeichen
 - CSS-Klassen: BEM-Notation (`block__element--modifier`)
-- Bildnamen: `torte-[name]-[nummer].jpg` (Kleinbuchstaben, Bindestriche)
+- Bildnamen: `torte-[name]-[nummer].png` (Kleinbuchstaben, Bindestriche)
 - Keine Inline-Styles im HTML
 - Keine Kommentare im HTML/CSS außer bei nicht-offensichtlichem Code
 

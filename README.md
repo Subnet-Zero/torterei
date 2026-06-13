@@ -48,7 +48,7 @@ python3 -m http.server 8080
 
 ### Bilder
 
-- Format: JPG oder WebP
+- Format: PNG
 - Empfohlene Breite: 800–1200 px
 - Namensschema: `torte-[name]-[nummer].jpg`
 - Ablageort: `assets/images/`
