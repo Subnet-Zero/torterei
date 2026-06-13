@@ -191,6 +191,52 @@ main {
   line-height: 1.5;
 }
 
+/* === Kontakt === */
+.kontakt {
+  margin-bottom: var(--abstand-xl);
+}
+
+.kontakt__box {
+  background-color: var(--farbe-akzent);
+  border-radius: var(--radius);
+  padding: var(--abstand-xl) var(--abstand-l);
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.kontakt__text {
+  color: #fff;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  margin-bottom: var(--abstand-l);
+}
+
+.kontakt__link {
+  display: inline-block;
+  background-color: #fff;
+  color: var(--farbe-akzent);
+  text-decoration: none;
+  padding: var(--abstand-s) var(--abstand-l);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+  margin-bottom: var(--abstand-l);
+  transition: opacity 0.2s;
+}
+
+.kontakt__link:hover {
+  opacity: 0.88;
+}
+
+.kontakt__hinweis {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
 /* === Über-mich-Abschnitt === */
 .ueber-uns {
   background-color: var(--farbe-karte);
