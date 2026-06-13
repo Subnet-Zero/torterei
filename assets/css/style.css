@@ -57,6 +57,43 @@ img {
   width: 100%;
 }
 
+/* === Sprachumschalter === */
+.lang-switch {
+  position: absolute;
+  top: var(--abstand-m);
+  right: var(--abstand-l);
+  display: flex;
+  gap: var(--abstand-s);
+  align-items: center;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+.lang-switch__link {
+  color: var(--farbe-text-hell);
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: var(--radius);
+}
+
+.lang-switch__link:hover {
+  color: var(--farbe-akzent);
+}
+
+.lang-switch__link--aktiv {
+  color: var(--farbe-akzent);
+  font-weight: bold;
+  border: 1px solid var(--farbe-linie);
+}
+
+.lang-switch__trenner {
+  color: var(--farbe-linie);
+}
+
+.site-header {
+  position: relative;
+}
+
 /* === Kopfbereich === */
 .site-header {
   background-color: var(--farbe-karte);

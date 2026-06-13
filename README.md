@@ -75,3 +75,4 @@ Statische Dateien, kein Build-Schritt nötig. Optionen:
 | 2026-06-13 | CSS-Lightbox mit Durchklick-Navigation hinzugefügt (kein JavaScript) |
 | 2026-06-13 | Impressum (impressum.html) nach § 5 TMG erstellt |
 | 2026-06-13 | Datenschutzerklärung (datenschutz.html) nach DSGVO erstellt |
+| 2026-06-13 | Englische Version (en/index.html) und Sprachumschalter DE\|EN hinzugefügt |
