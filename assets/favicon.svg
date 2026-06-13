@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Torterei Marienfeldt">
+  <rect width="32" height="32" rx="6" fill="#fdf8f3"/>
+  <circle cx="16" cy="6" r="2" fill="#c4763a"/>
+  <rect x="15.4" y="7" width="1.2" height="3" fill="#8b4513"/>
+  <path d="M7 13h18v3a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2z" fill="#c4763a"/>
+  <path d="M8 18h16v6a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2z" fill="#8b4513"/>
+  <path d="M7 13c1.5 1.6 3 1.6 4.5 0s3-1.6 4.5 0 3 1.6 4.5 0 3-1.6 4.5 0v3H7z" fill="#fdf8f3"/>
+</svg>
