@@ -138,35 +138,6 @@ img {
   gap: var(--abstand-m);
 }
 
-/* === Sprachumschalter === */
-.lang-switch {
-  display: flex;
-  gap: 2px;
-  align-items: center;
-  background-color: var(--farbe-linie);
-  border-radius: var(--radius);
-  padding: 2px;
-}
-
-.lang-switch__link {
-  color: var(--farbe-text-hell);
-  text-decoration: none;
-  font-size: 0.75rem;
-  padding: 2px 7px;
-  border-radius: 2px;
-  letter-spacing: 0.03em;
-  line-height: 1.6;
-}
-
-.lang-switch__link:hover {
-  color: var(--farbe-akzent);
-}
-
-.lang-switch__link--aktiv {
-  background-color: var(--farbe-karte);
-  color: var(--farbe-akzent);
-  font-weight: bold;
-}
 
 .site-header {
   position: relative;
