@@ -73,3 +73,4 @@ Statische Dateien, kein Build-Schritt nötig. Optionen:
 | 2026-06-13 | Elsa-Torte, Schokoladen-Drip-Torte, Regenbogen-Torte und Schmetterlings-Torte hinzugefügt |
 | 2026-06-13 | Home-Assistant-Torte, Ohnezahn-Torte und Monster-Truck-Torte hinzugefügt — alle 11 Torten erfasst |
 | 2026-06-13 | CSS-Lightbox mit Durchklick-Navigation hinzugefügt (kein JavaScript) |
+| 2026-06-13 | Impressum (impressum.html) nach § 5 TMG erstellt |

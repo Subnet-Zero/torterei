@@ -311,6 +311,43 @@ main {
   right: var(--abstand-m);
 }
 
+/* === Impressum === */
+.impressum {
+  max-width: 700px;
+  margin: 0 auto var(--abstand-xl);
+}
+
+.impressum__block {
+  background-color: var(--farbe-karte);
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius);
+  padding: var(--abstand-l);
+  margin-bottom: var(--abstand-m);
+}
+
+.impressum__rubrik {
+  font-family: var(--schrift-kopf);
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--farbe-akzent);
+  margin-bottom: var(--abstand-s);
+}
+
+.impressum__block p {
+  color: var(--farbe-text-hell);
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.impressum__block a {
+  color: var(--farbe-akzent);
+  text-decoration: none;
+}
+
+.impressum__block a:hover {
+  text-decoration: underline;
+}
+
 /* === Fußbereich === */
 .site-footer {
   background-color: var(--farbe-text);
