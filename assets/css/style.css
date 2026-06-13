@@ -528,15 +528,6 @@ main {
   text-decoration: underline;
 }
 
-.site-footer__liebe {
-  margin-bottom: var(--abstand-s);
-  letter-spacing: 0.02em;
-}
-
-.site-footer__herz {
-  color: #e0908a;
-  font-style: normal;
-}
 
 /* === Responsiv === */
 @media (max-width: 600px) {
