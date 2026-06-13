@@ -1,0 +1,242 @@
+/* === Custom Properties === */
+:root {
+  --farbe-hintergrund: #fdf8f3;
+  --farbe-text: #2c2218;
+  --farbe-text-hell: #6b5744;
+  --farbe-akzent: #8b4513;
+  --farbe-akzent-hell: #c4763a;
+  --farbe-linie: #e8d8c8;
+  --farbe-karte: #ffffff;
+
+  --schrift-kopf: 'Georgia', 'Times New Roman', serif;
+  --schrift-text: 'Helvetica Neue', Arial, sans-serif;
+
+  --abstand-s: 0.5rem;
+  --abstand-m: 1rem;
+  --abstand-l: 2rem;
+  --abstand-xl: 4rem;
+
+  --radius: 4px;
+  --schatten: 0 2px 8px rgba(44, 34, 24, 0.08);
+}
+
+/* === Reset === */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Basis === */
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--farbe-hintergrund);
+  color: var(--farbe-text);
+  font-family: var(--schrift-text);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* === Layout === */
+.seite-inhalt {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 var(--abstand-l);
+  width: 100%;
+}
+
+/* === Kopfbereich === */
+.site-header {
+  background-color: var(--farbe-karte);
+  border-bottom: 1px solid var(--farbe-linie);
+  padding: var(--abstand-l) 0;
+  text-align: center;
+}
+
+.site-header__titel {
+  font-family: var(--schrift-kopf);
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-weight: normal;
+  color: var(--farbe-akzent);
+  letter-spacing: 0.03em;
+}
+
+.site-header__untertitel {
+  font-family: var(--schrift-text);
+  font-size: 1rem;
+  color: var(--farbe-text-hell);
+  margin-top: var(--abstand-s);
+  font-style: italic;
+}
+
+/* === Navigation === */
+.site-nav {
+  background-color: var(--farbe-akzent);
+}
+
+.site-nav__liste {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.site-nav__link {
+  display: block;
+  padding: var(--abstand-s) var(--abstand-l);
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: background-color 0.2s;
+}
+
+.site-nav__link:hover {
+  background-color: var(--farbe-akzent-hell);
+}
+
+/* === Hauptinhalt === */
+main {
+  flex: 1;
+  padding: var(--abstand-xl) 0;
+}
+
+/* === Abschnitt-Überschriften === */
+.abschnitt-titel {
+  font-family: var(--schrift-kopf);
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: normal;
+  color: var(--farbe-akzent);
+  text-align: center;
+  margin-bottom: var(--abstand-l);
+  padding-bottom: var(--abstand-m);
+  position: relative;
+}
+
+.abschnitt-titel::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: var(--farbe-akzent-hell);
+  margin: var(--abstand-s) auto 0;
+}
+
+/* === Torten-Galerie === */
+.torten-galerie {
+  margin-bottom: var(--abstand-xl);
+}
+
+.torten-galerie__raster {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--abstand-l);
+}
+
+/* === Torten-Karte === */
+.torte-card {
+  background-color: var(--farbe-karte);
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--schatten);
+}
+
+.torte-card__bild {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.torte-card__bild--platzhalter {
+  background-color: var(--farbe-linie);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 4 / 3;
+  color: var(--farbe-text-hell);
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.torte-card__info {
+  padding: var(--abstand-m) var(--abstand-l);
+}
+
+.torte-card__name {
+  font-family: var(--schrift-kopf);
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: var(--farbe-text);
+  margin-bottom: var(--abstand-s);
+}
+
+.torte-card__beschreibung {
+  font-size: 0.9rem;
+  color: var(--farbe-text-hell);
+  line-height: 1.5;
+}
+
+/* === Über-mich-Abschnitt === */
+.ueber-uns {
+  background-color: var(--farbe-karte);
+  border: 1px solid var(--farbe-linie);
+  border-radius: var(--radius);
+  padding: var(--abstand-l);
+  max-width: 700px;
+  margin: 0 auto var(--abstand-xl);
+  text-align: center;
+}
+
+.ueber-uns__text {
+  color: var(--farbe-text-hell);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+/* === Fußbereich === */
+.site-footer {
+  background-color: var(--farbe-text);
+  color: var(--farbe-linie);
+  text-align: center;
+  padding: var(--abstand-l) 0;
+  font-size: 0.85rem;
+}
+
+.site-footer a {
+  color: var(--farbe-linie);
+  text-decoration: underline;
+}
+
+/* === Responsiv === */
+@media (max-width: 600px) {
+  .seite-inhalt {
+    padding: 0 var(--abstand-m);
+  }
+
+  .torten-galerie__raster {
+    grid-template-columns: 1fr;
+  }
+
+  .site-nav__liste {
+    flex-wrap: wrap;
+  }
+
+  .site-nav__link {
+    padding: var(--abstand-s) var(--abstand-m);
+    font-size: 0.8rem;
+  }
+}
