@@ -359,12 +359,16 @@ main {
 
 /* === Über-mich-Abschnitt === */
 .ueber-uns {
+  margin-bottom: var(--abstand-xl);
+}
+
+.ueber-uns__box {
   background-color: var(--farbe-karte);
   border: 1px solid var(--farbe-linie);
   border-radius: var(--radius);
   padding: var(--abstand-l);
   max-width: 700px;
-  margin: 0 auto var(--abstand-xl);
+  margin: 0 auto;
   text-align: center;
 }
 
