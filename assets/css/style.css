@@ -378,6 +378,10 @@ main {
   line-height: 1.8;
 }
 
+.ueber-uns__text + .ueber-uns__text {
+  margin-top: var(--abstand-m);
+}
+
 /* === Torten-Karte: Bild anklickbar === */
 .torte-card__bild-link {
   display: block;
