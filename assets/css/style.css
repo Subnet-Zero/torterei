@@ -141,17 +141,21 @@ img {
 /* === Sprachumschalter === */
 .lang-switch {
   display: flex;
-  gap: var(--abstand-s);
+  gap: 2px;
   align-items: center;
-  font-size: 0.8rem;
-  letter-spacing: 0.05em;
+  background-color: var(--farbe-linie);
+  border-radius: var(--radius);
+  padding: 2px;
 }
 
 .lang-switch__link {
   color: var(--farbe-text-hell);
   text-decoration: none;
-  padding: 2px 6px;
-  border-radius: var(--radius);
+  font-size: 0.75rem;
+  padding: 2px 7px;
+  border-radius: 2px;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
 }
 
 .lang-switch__link:hover {
@@ -159,13 +163,9 @@ img {
 }
 
 .lang-switch__link--aktiv {
+  background-color: var(--farbe-karte);
   color: var(--farbe-akzent);
   font-weight: bold;
-  border: 1px solid var(--farbe-linie);
-}
-
-.lang-switch__trenner {
-  color: var(--farbe-linie);
 }
 
 .site-header {
