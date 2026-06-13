@@ -534,6 +534,18 @@ main {
     padding: 0 var(--abstand-m);
   }
 
+  .header-controls {
+    position: static;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: var(--abstand-s);
+    margin-top: var(--abstand-m);
+  }
+
+  .site-header {
+    padding-top: var(--abstand-m);
+  }
+
   .torten-galerie__raster {
     grid-template-columns: 1fr;
   }
