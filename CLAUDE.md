@@ -7,7 +7,8 @@ Keine Domain registriert (Stand: Juni 2026).
 
 ## Technische Grundsätze
 
-- Reines HTML5 & CSS3 — kein JavaScript, kein Framework, keine Build-Tools
+- HTML5 & CSS3 — kein Framework, keine Build-Tools
+- JavaScript: **ausschließlich** `assets/js/theme.js` für den Dark-Mode-Schalter (localStorage). Kein weiteres JS.
 - Keine externen Abhängigkeiten (keine CDNs, keine npm-Pakete)
 - Mobile-first, responsives Layout via CSS Flexbox/Grid
 - Alle Bilder lokal unter `assets/images/` (Format: PNG)

@@ -6,6 +6,7 @@
   <meta name="description" content="Torterei Marienfeldt – selbstgebackene Torten mit Liebe zum Handwerk.">
   <title>Torterei Marienfeldt</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/theme.js"></script>
 </head>
 <body>
 
@@ -14,11 +15,18 @@
       <h1 class="site-header__titel">Torterei Marienfeldt</h1>
       <p class="site-header__untertitel">Selbstgebacken mit Liebe</p>
     </div>
-    <nav class="lang-switch" aria-label="Sprache wählen">
-      <span class="lang-switch__link lang-switch__link--aktiv">DE</span>
-      <span class="lang-switch__trenner">|</span>
-      <a class="lang-switch__link" href="en/index.html" hreflang="en">EN</a>
-    </nav>
+    <div class="header-controls">
+      <nav class="lang-switch" aria-label="Sprache wählen">
+        <span class="lang-switch__link lang-switch__link--aktiv">DE</span>
+        <span class="lang-switch__trenner">|</span>
+        <a class="lang-switch__link" href="en/index.html" hreflang="en">EN</a>
+      </nav>
+      <div class="theme-switch" role="group" aria-label="Farbschema">
+        <button class="theme-switch__btn" data-theme-set="light">Hell</button>
+        <button class="theme-switch__btn" data-theme-set="system">System</button>
+        <button class="theme-switch__btn" data-theme-set="dark">Dunkel</button>
+      </div>
+    </div>
   </header>
 
   <nav class="site-nav" aria-label="Hauptnavigation">

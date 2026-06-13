@@ -33,6 +33,60 @@
   }
 }
 
+[data-theme="dark"] {
+  --farbe-hintergrund: #1a1209;
+  --farbe-text: #f0e6d8;
+  --farbe-text-hell: #b89880;
+  --farbe-akzent: #c4763a;
+  --farbe-akzent-hell: #d9924f;
+  --farbe-linie: #3a2a1a;
+  --farbe-karte: #261a0e;
+  --schatten: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] {
+  --farbe-hintergrund: #fdf8f3;
+  --farbe-text: #2c2218;
+  --farbe-text-hell: #6b5744;
+  --farbe-akzent: #8b4513;
+  --farbe-akzent-hell: #c4763a;
+  --farbe-linie: #e8d8c8;
+  --farbe-karte: #ffffff;
+  --schatten: 0 2px 8px rgba(44, 34, 24, 0.08);
+}
+
+/* === Theme-Schalter === */
+.theme-switch {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  background-color: var(--farbe-linie);
+  border-radius: var(--radius);
+  padding: 2px;
+}
+
+.theme-switch__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.75rem;
+  padding: 2px 7px;
+  border-radius: 2px;
+  color: var(--farbe-text-hell);
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+}
+
+.theme-switch__btn:hover {
+  color: var(--farbe-akzent);
+}
+
+.theme-switch__btn--aktiv {
+  background-color: var(--farbe-karte);
+  color: var(--farbe-akzent);
+  font-weight: bold;
+}
+
 /* === Lichtverhältnisse (helles Schema explizit) === */
 :root {
 }
@@ -74,11 +128,18 @@ img {
   width: 100%;
 }
 
-/* === Sprachumschalter === */
-.lang-switch {
+/* === Header-Controls (Sprache + Theme) === */
+.header-controls {
   position: absolute;
   top: var(--abstand-m);
   right: var(--abstand-l);
+  display: flex;
+  align-items: center;
+  gap: var(--abstand-m);
+}
+
+/* === Sprachumschalter === */
+.lang-switch {
   display: flex;
   gap: var(--abstand-s);
   align-items: center;
