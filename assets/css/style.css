@@ -263,6 +263,11 @@ main {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
+.kontakt__box .abschnitt-titel,
+.ueber-uns__box .abschnitt-titel {
+  margin-bottom: var(--abstand-m);
+}
+
 /* === Torten-Galerie === */
 .torten-galerie {
   margin-bottom: var(--abstand-xl);
@@ -327,7 +332,7 @@ main {
 .kontakt__box {
   background-color: var(--farbe-akzent);
   border-radius: var(--radius);
-  padding: var(--abstand-xl) var(--abstand-l);
+  padding: var(--abstand-l);
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
@@ -336,8 +341,8 @@ main {
 .kontakt__text {
   color: #fff;
   font-size: 1.05rem;
-  line-height: 1.8;
-  margin-bottom: var(--abstand-l);
+  line-height: 1.7;
+  margin-bottom: var(--abstand-m);
 }
 
 .kontakt__link {
@@ -350,7 +355,7 @@ main {
   font-size: 1rem;
   font-weight: bold;
   letter-spacing: 0.02em;
-  margin-bottom: var(--abstand-l);
+  margin-bottom: var(--abstand-m);
   transition: opacity 0.2s;
 }
 
