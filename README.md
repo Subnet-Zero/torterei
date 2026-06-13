@@ -71,3 +71,4 @@ Statische Dateien, kein Build-Schritt nötig. Optionen:
 | 2026-06-13 | Torten-Karten für Moana-Torte und Blaue Ombré-Torte eingepflegt; Bildplatzhalter durch echte `<img>`-Tags ersetzt |
 | 2026-06-13 | Grüne Drip-Torte und Landschaftstorte hinzugefügt |
 | 2026-06-13 | Elsa-Torte, Schokoladen-Drip-Torte, Regenbogen-Torte und Schmetterlings-Torte hinzugefügt |
+| 2026-06-13 | Home-Assistant-Torte, Ohnezahn-Torte und Monster-Truck-Torte hinzugefügt — alle 11 Torten erfasst |
