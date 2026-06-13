@@ -20,6 +20,23 @@
   --schatten: 0 2px 8px rgba(44, 34, 24, 0.08);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --farbe-hintergrund: #1a1209;
+    --farbe-text: #f0e6d8;
+    --farbe-text-hell: #b89880;
+    --farbe-akzent: #c4763a;
+    --farbe-akzent-hell: #d9924f;
+    --farbe-linie: #3a2a1a;
+    --farbe-karte: #261a0e;
+    --schatten: 0 2px 8px rgba(0, 0, 0, 0.4);
+  }
+}
+
+/* === Lichtverhältnisse (helles Schema explizit) === */
+:root {
+}
+
 /* === Reset === */
 *, *::before, *::after {
   box-sizing: border-box;
