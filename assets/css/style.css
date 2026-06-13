@@ -273,6 +273,14 @@ main {
   margin-bottom: var(--abstand-xl);
 }
 
+.torten-galerie__intro {
+  text-align: center;
+  color: var(--farbe-text-hell);
+  font-style: italic;
+  margin: calc(-1 * var(--abstand-m)) auto var(--abstand-l);
+  max-width: 600px;
+}
+
 .torten-galerie__raster {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -547,6 +555,16 @@ main {
 .site-footer a {
   color: var(--farbe-linie);
   text-decoration: underline;
+}
+
+.site-footer__liebe {
+  margin-bottom: var(--abstand-s);
+  letter-spacing: 0.02em;
+}
+
+.site-footer__herz {
+  color: #e0908a;
+  font-style: normal;
 }
 
 /* === Responsiv === */
