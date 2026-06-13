@@ -255,6 +255,14 @@ main {
   margin: var(--abstand-s) auto 0;
 }
 
+.abschnitt-titel--auf-akzent {
+  color: #fff;
+}
+
+.abschnitt-titel--auf-akzent::after {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
 /* === Torten-Galerie === */
 .torten-galerie {
   margin-bottom: var(--abstand-xl);
