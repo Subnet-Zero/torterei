@@ -33,6 +33,9 @@ torterei/
 - Bildnamen: `torte-[name]-[nummer].png` (Kleinbuchstaben, Bindestriche)
 - Keine Inline-Styles im HTML
 - Keine Kommentare im HTML/CSS außer bei nicht-offensichtlichem Code
+- **Geteilte Bausteine immer auf ALLEN Seiten gleich halten**: Header, Hauptnavigation
+  und Footer existieren auf jeder Seite (`index.html`, `en/index.html`, `impressum.html`,
+  `datenschutz.html`). Ändert sich einer davon, alle Seiten gemeinsam anpassen.
 
 ## Inhalte pflegen
 
