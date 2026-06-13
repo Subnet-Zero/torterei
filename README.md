@@ -76,3 +76,5 @@ Statische Dateien, kein Build-Schritt nötig. Optionen:
 | 2026-06-13 | Impressum (impressum.html) nach § 5 TMG erstellt |
 | 2026-06-13 | Datenschutzerklärung (datenschutz.html) nach DSGVO erstellt |
 | 2026-06-13 | Englische Version (en/index.html) und Sprachumschalter DE\|EN hinzugefügt |
+| 2026-06-13 | Tote Lightbox-Verweise auf nicht vorhandene Bilder entfernt |
+| 2026-06-13 | Social-Preview (Open Graph & Twitter Card) auf allen Seiten ergänzt |
