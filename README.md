@@ -108,3 +108,4 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 | 2026-07-11 | Automatisiertes Deployment per GitHub Actions über SSH/rsync eingerichtet (`.github/workflows/deploy.yml`); GitHub Pages abgelöst |
 | 2026-07-11 | Tortenbestand aus der Kundendatenbank deployt (12 Torten) |
 | 2026-07-11 | Tortenbestand aus der Kundendatenbank deployt (12 Torten) |
+| 2026-07-11 | Karten-Struktur dokumentiert: Torten-Name ist nicht mehr optional (immer vorhanden), Anlass und „Überreicht am" bleiben optional |
