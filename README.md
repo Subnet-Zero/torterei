@@ -55,10 +55,35 @@ python3 -m http.server 8080
 
 ### Deployment
 
-Statische Dateien, kein Build-Schritt nötig. Optionen:
+Automatisiert per **GitHub Actions über SSH/rsync**: Bei jedem Push auf `main`
+lädt der Workflow `.github/workflows/deploy.yml` alle Dateien auf den Webserver
+hoch (`--delete` spiegelt auch Löschungen). `.git`, `.github`, `README.md` und
+`CLAUDE.md` werden dabei ausgeschlossen.
 
-- **GitHub Pages**: Repository-Einstellungen → Pages → Branch `main` / Ordner `/`
-- **FTP/SFTP**: Alle Dateien auf Webserver hochladen
+Manuell auslösbar über den Reiter **Actions → Deploy per SSH → Run workflow**.
+
+#### Benötigte GitHub Secrets
+
+Unter **Settings → Secrets and variables → Actions → New repository secret**:
+
+| Secret | Beschreibung | Beispiel |
+|---|---|---|
+| `SSH_HOST` | Servername oder IP | `web.beispiel.de` |
+| `SSH_USER` | SSH-Benutzer | `torterei` |
+| `SSH_PORT` | SSH-Port (optional, Standard `22`) | `22` |
+| `SSH_PRIVATE_KEY` | Privater SSH-Schlüssel (kompletter Inhalt) | `-----BEGIN OPENSSH PRIVATE KEY----- …` |
+| `DEPLOY_PATH` | Zielverzeichnis auf dem Server | `/var/www/torterei` |
+
+#### Schlüsselpaar erzeugen
+
+```bash
+ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
+```
+
+- `deploy_key` (privat) → als Secret `SSH_PRIVATE_KEY` einfügen
+- `deploy_key.pub` (öffentlich) → auf dem Server an `~/.ssh/authorized_keys`
+  des Deploy-Benutzers anhängen
+
 - **Domain**: Noch nicht registriert (Stand: Juni 2026)
 
 ---
@@ -80,3 +105,4 @@ Statische Dateien, kein Build-Schritt nötig. Optionen:
 | 2026-06-13 | Social-Preview (Open Graph & Twitter Card) auf allen Seiten ergänzt |
 | 2026-06-13 | SVG-Favicon (Torten-Motiv) hinzugefügt und auf allen Seiten verlinkt |
 | 2026-06-13 | CSS aufgeräumt: leere Regelblöcke und veraltete Kommentare entfernt |
+| 2026-07-11 | Automatisiertes Deployment per GitHub Actions über SSH/rsync eingerichtet (`.github/workflows/deploy.yml`); GitHub Pages abgelöst |
