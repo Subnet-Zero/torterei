@@ -50,14 +50,22 @@ torterei/
 ```html
 <div class="torte-card">
   <a href="#lb-[name]-1" class="torte-card__bild-link">
-    <img class="torte-card__bild" src="assets/images/torte-[name]-1.png" alt="[Beschreibung]" loading="lazy">
+    <img class="torte-card__bild" src="assets/images/torte-[name]-1.png" alt="[Name]" loading="lazy">
   </a>
   <div class="torte-card__info">
     <h3 class="torte-card__name">[Name]</h3>
+    <p class="torte-card__anlass">[Anlass]</p>                     <!-- optional -->
     <p class="torte-card__beschreibung">[kurze Beschreibung]</p>
+    <p class="torte-card__datum">Überreicht am: [TT.MM.JJJJ]</p>   <!-- optional -->
   </div>
 </div>
 ```
+
+**Name und Beschreibung sind immer vorhanden.** Anlass und „Überreicht am"
+erscheinen nur, wenn sie in der Kundendatenbank je Torte für die Website
+freigegeben wurden. Der Torten-Name ist keine optionale Angabe (mehr) — aus
+der Kundendatenbank deployte Karten tragen **immer** eine `torte-card__name`;
+eine namenlose Karte kommt nicht vor.
 
 ## Deployment
 
