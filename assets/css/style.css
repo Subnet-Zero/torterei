@@ -290,10 +290,29 @@ main {
   margin-bottom: var(--abstand-s);
 }
 
+.torte-card__anlass {
+  display: inline-block;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--farbe-akzent);
+  border: 1px solid var(--farbe-linie);
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  margin-bottom: var(--abstand-s);
+}
+
 .torte-card__beschreibung {
   font-size: 0.9rem;
   color: var(--farbe-text-hell);
   line-height: 1.5;
+}
+
+.torte-card__datum {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--farbe-text-hell);
+  margin-top: var(--abstand-s);
 }
 
 /* === Kontakt === */
