@@ -109,3 +109,4 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 | 2026-07-11 | Tortenbestand aus der Kundendatenbank deployt (12 Torten) |
 | 2026-07-11 | Tortenbestand aus der Kundendatenbank deployt (12 Torten) |
 | 2026-07-11 | Karten-Struktur dokumentiert: Torten-Name ist nicht mehr optional (immer vorhanden), Anlass und „Überreicht am" bleiben optional |
+| 2026-07-12 | Tortenbestand aus der Kundendatenbank deployt (10 Torten) |
