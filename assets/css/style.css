@@ -1,12 +1,13 @@
 /* === Custom Properties === */
 :root {
-  --farbe-hintergrund: #fdf8f3;
-  --farbe-text: #2c2218;
-  --farbe-text-hell: #6b5744;
-  --farbe-akzent: #8b4513;
-  --farbe-akzent-hell: #c4763a;
-  --farbe-linie: #e8d8c8;
-  --farbe-karte: #ffffff;
+  --farbe-hintergrund: #f5ecdf;
+  --farbe-text: #3a2f28;
+  --farbe-text-hell: #7c6a5b;
+  --farbe-akzent: #b0644e;
+  --farbe-akzent-hell: #c37e63;
+  --farbe-linie: #e6d8c5;
+  --farbe-karte: #fffaf2;
+  --farbe-panel: #efe4d2;
 
   --schrift-kopf: 'Georgia', 'Times New Roman', serif;
   --schrift-text: 'Helvetica Neue', Arial, sans-serif;
@@ -16,43 +17,46 @@
   --abstand-l: 2rem;
   --abstand-xl: 4rem;
 
-  --radius: 4px;
-  --schatten: 0 2px 8px rgba(44, 34, 24, 0.08);
+  --radius: 6px;
+  --schatten: 0 1px 4px rgba(58, 47, 40, 0.07);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --farbe-hintergrund: #1a1209;
-    --farbe-text: #f0e6d8;
-    --farbe-text-hell: #b89880;
-    --farbe-akzent: #c4763a;
-    --farbe-akzent-hell: #d9924f;
-    --farbe-linie: #3a2a1a;
-    --farbe-karte: #261a0e;
-    --schatten: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --farbe-hintergrund: #191410;
+    --farbe-text: #efe3d4;
+    --farbe-text-hell: #b3a08d;
+    --farbe-akzent: #d38a70;
+    --farbe-akzent-hell: #e0a184;
+    --farbe-linie: #35291f;
+    --farbe-karte: #241c15;
+    --farbe-panel: #241c15;
+    --schatten: 0 1px 4px rgba(0, 0, 0, 0.4);
   }
 }
 
 [data-theme="dark"] {
-  --farbe-hintergrund: #1a1209;
-  --farbe-text: #f0e6d8;
-  --farbe-text-hell: #b89880;
-  --farbe-akzent: #c4763a;
-  --farbe-akzent-hell: #d9924f;
-  --farbe-linie: #3a2a1a;
-  --farbe-karte: #261a0e;
-  --schatten: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --farbe-hintergrund: #191410;
+  --farbe-text: #efe3d4;
+  --farbe-text-hell: #b3a08d;
+  --farbe-akzent: #d38a70;
+  --farbe-akzent-hell: #e0a184;
+  --farbe-linie: #35291f;
+  --farbe-karte: #241c15;
+  --farbe-panel: #241c15;
+  --schatten: 0 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 [data-theme="light"] {
-  --farbe-hintergrund: #fdf8f3;
-  --farbe-text: #2c2218;
-  --farbe-text-hell: #6b5744;
-  --farbe-akzent: #8b4513;
-  --farbe-akzent-hell: #c4763a;
-  --farbe-linie: #e8d8c8;
-  --farbe-karte: #ffffff;
-  --schatten: 0 2px 8px rgba(44, 34, 24, 0.08);
+  --farbe-hintergrund: #f5ecdf;
+  --farbe-text: #3a2f28;
+  --farbe-text-hell: #7c6a5b;
+  --farbe-akzent: #b0644e;
+  --farbe-akzent-hell: #c37e63;
+  --farbe-linie: #e6d8c5;
+  --farbe-karte: #fffaf2;
+  --farbe-panel: #efe4d2;
+  --schatten: 0 1px 4px rgba(58, 47, 40, 0.07);
 }
 
 /* === Theme-Schalter === */
@@ -61,7 +65,7 @@
   gap: 2px;
   align-items: center;
   background-color: var(--farbe-linie);
-  border-radius: var(--radius);
+  border-radius: 999px;
   padding: 2px;
 }
 
@@ -70,10 +74,9 @@
   border: none;
   cursor: pointer;
   font-size: 0.75rem;
-  padding: 2px 7px;
-  border-radius: 2px;
+  padding: 3px 10px;
+  border-radius: 999px;
   color: var(--farbe-text-hell);
-  letter-spacing: 0.03em;
   line-height: 1.6;
 }
 
@@ -104,7 +107,7 @@ body {
   background-color: var(--farbe-hintergrund);
   color: var(--farbe-text);
   font-family: var(--schrift-text);
-  line-height: 1.6;
+  line-height: 1.65;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -118,7 +121,7 @@ img {
 
 /* === Layout === */
 .seite-inhalt {
-  max-width: 1100px;
+  max-width: 1080px;
   margin: 0 auto;
   padding: 0 var(--abstand-l);
   width: 100%;
@@ -134,32 +137,30 @@ img {
   gap: var(--abstand-m);
 }
 
-
 /* === Kopfbereich === */
 .site-header {
   position: relative;
-  background-color: var(--farbe-karte);
-  border-bottom: 1px solid var(--farbe-linie);
-  padding: var(--abstand-l) 0;
+  background-color: var(--farbe-hintergrund);
+  padding: calc(var(--abstand-l) + var(--abstand-s)) 0 var(--abstand-l);
   text-align: center;
 }
 
 .site-header__titel {
   font-family: var(--schrift-kopf);
-  font-size: clamp(1.8rem, 5vw, 3rem);
+  font-size: clamp(1.9rem, 5vw, 3.1rem);
   font-weight: normal;
-  color: var(--farbe-akzent);
-  letter-spacing: 0.03em;
+  color: var(--farbe-text);
+  letter-spacing: 0.01em;
 }
 
 .site-header__trenner {
-  margin: 0 0.25em;
-  color: var(--farbe-akzent-hell);
+  margin: 0 0.3em;
+  color: var(--farbe-akzent);
 }
 
 .site-header__untertitel {
-  font-family: var(--schrift-text);
-  font-size: 1rem;
+  font-family: var(--schrift-kopf);
+  font-size: 1.05rem;
   color: var(--farbe-text-hell);
   margin-top: var(--abstand-s);
   font-style: italic;
@@ -167,29 +168,33 @@ img {
 
 /* === Navigation === */
 .site-nav {
-  background-color: var(--farbe-akzent);
+  background-color: var(--farbe-hintergrund);
+  border-top: 1px solid var(--farbe-linie);
+  border-bottom: 1px solid var(--farbe-linie);
 }
 
 .site-nav__liste {
   list-style: none;
   display: flex;
   justify-content: center;
-  gap: 0;
+  flex-wrap: wrap;
+  gap: var(--abstand-m);
 }
 
 .site-nav__link {
   display: block;
-  padding: var(--abstand-s) var(--abstand-l);
-  color: #fff;
+  padding: var(--abstand-m) var(--abstand-s);
+  color: var(--farbe-text-hell);
   text-decoration: none;
-  font-size: 0.9rem;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  transition: background-color 0.2s;
+  font-family: var(--schrift-kopf);
+  font-size: 1rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s, border-color 0.2s;
 }
 
 .site-nav__link:hover {
-  background-color: var(--farbe-akzent-hell);
+  color: var(--farbe-akzent);
+  border-bottom-color: var(--farbe-akzent);
 }
 
 /* === Hauptinhalt === */
@@ -201,30 +206,10 @@ main {
 /* === Abschnitt-Überschriften === */
 .abschnitt-titel {
   font-family: var(--schrift-kopf);
-  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
   font-weight: normal;
-  color: var(--farbe-akzent);
-  text-align: center;
+  color: var(--farbe-text);
   margin-bottom: var(--abstand-l);
-  padding-bottom: var(--abstand-m);
-  position: relative;
-}
-
-.abschnitt-titel::after {
-  content: '';
-  display: block;
-  width: 60px;
-  height: 2px;
-  background-color: var(--farbe-akzent-hell);
-  margin: var(--abstand-s) auto 0;
-}
-
-.abschnitt-titel--auf-akzent {
-  color: #fff;
-}
-
-.abschnitt-titel--auf-akzent::after {
-  background-color: rgba(255, 255, 255, 0.6);
 }
 
 .kontakt__box .abschnitt-titel,
@@ -238,21 +223,30 @@ main {
 }
 
 .torten-galerie__intro {
-  text-align: center;
   color: var(--farbe-text-hell);
+  font-family: var(--schrift-kopf);
   font-style: italic;
-  margin: calc(-1 * var(--abstand-m)) auto var(--abstand-l);
-  max-width: 600px;
+  font-size: 1.1rem;
+  margin: calc(-1 * var(--abstand-m)) 0 var(--abstand-l);
+  max-width: 40ch;
 }
 
 .torten-galerie__raster {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: var(--abstand-l);
+  column-count: 3;
+  column-gap: var(--abstand-l);
+}
+
+@media (max-width: 900px) {
+  .torten-galerie__raster {
+    column-count: 2;
+  }
 }
 
 /* === Torten-Karte === */
 .torte-card {
+  break-inside: avoid;
+  width: 100%;
+  margin-bottom: var(--abstand-l);
   background-color: var(--farbe-karte);
   border: 1px solid var(--farbe-linie);
   border-radius: var(--radius);
@@ -262,9 +256,8 @@ main {
 
 .torte-card__bild {
   width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
   background-color: var(--farbe-linie);
+  transition: transform 0.4s ease;
 }
 
 .torte-card__bild--platzhalter {
@@ -279,12 +272,12 @@ main {
 }
 
 .torte-card__info {
-  padding: var(--abstand-m) var(--abstand-l);
+  padding: var(--abstand-m) var(--abstand-l) var(--abstand-l);
 }
 
 .torte-card__name {
   font-family: var(--schrift-kopf);
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: normal;
   color: var(--farbe-text);
   margin-bottom: var(--abstand-s);
@@ -292,20 +285,20 @@ main {
 
 .torte-card__anlass {
   display: inline-block;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--farbe-akzent);
-  border: 1px solid var(--farbe-linie);
+  border: 1px solid var(--farbe-akzent);
   border-radius: 999px;
-  padding: 0.15rem 0.6rem;
+  padding: 0.15rem 0.7rem;
   margin-bottom: var(--abstand-s);
 }
 
 .torte-card__beschreibung {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--farbe-text-hell);
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .torte-card__datum {
@@ -313,77 +306,6 @@ main {
   font-style: italic;
   color: var(--farbe-text-hell);
   margin-top: var(--abstand-s);
-}
-
-/* === Kontakt === */
-.kontakt {
-  margin-bottom: var(--abstand-xl);
-}
-
-.kontakt__box {
-  background-color: var(--farbe-akzent);
-  border-radius: var(--radius);
-  padding: var(--abstand-l);
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.kontakt__text {
-  color: #fff;
-  font-size: 1.05rem;
-  line-height: 1.7;
-  margin-bottom: var(--abstand-m);
-}
-
-.kontakt__link {
-  display: inline-block;
-  background-color: #fff;
-  color: var(--farbe-akzent);
-  text-decoration: none;
-  padding: var(--abstand-s) var(--abstand-l);
-  border-radius: var(--radius);
-  font-size: 1rem;
-  font-weight: bold;
-  letter-spacing: 0.02em;
-  margin-bottom: var(--abstand-m);
-  transition: opacity 0.2s;
-}
-
-.kontakt__link:hover {
-  opacity: 0.88;
-}
-
-.kontakt__hinweis {
-  color: rgba(255, 255, 255, 0.75);
-  font-size: 0.85rem;
-  font-style: italic;
-  line-height: 1.6;
-}
-
-/* === Über-mich-Abschnitt === */
-.ueber-uns {
-  margin-bottom: var(--abstand-xl);
-}
-
-.ueber-uns__box {
-  background-color: var(--farbe-karte);
-  border: 1px solid var(--farbe-linie);
-  border-radius: var(--radius);
-  padding: var(--abstand-l);
-  max-width: 700px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.ueber-uns__text {
-  color: var(--farbe-text-hell);
-  font-size: 1rem;
-  line-height: 1.8;
-}
-
-.ueber-uns__text + .ueber-uns__text {
-  margin-top: var(--abstand-m);
 }
 
 /* === Torten-Karte: Bild anklickbar === */
@@ -394,11 +316,71 @@ main {
 
 .torte-card__bild-link:hover .torte-card__bild {
   transform: scale(1.03);
-  transition: transform 0.3s ease;
 }
 
-.torte-card__bild {
-  transition: transform 0.3s ease;
+/* === Kontakt === */
+.kontakt {
+  margin-bottom: var(--abstand-xl);
+}
+
+.kontakt__box {
+  background-color: var(--farbe-panel);
+  border: 1px solid var(--farbe-linie);
+  border-left: 4px solid var(--farbe-akzent);
+  border-radius: var(--radius);
+  padding: var(--abstand-l);
+  max-width: 640px;
+}
+
+.kontakt__text {
+  color: var(--farbe-text);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: var(--abstand-m);
+}
+
+.kontakt__link {
+  display: inline-block;
+  background-color: var(--farbe-akzent);
+  color: #fff;
+  text-decoration: none;
+  padding: var(--abstand-s) var(--abstand-l);
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 0.01em;
+  margin-bottom: var(--abstand-m);
+  transition: background-color 0.2s;
+}
+
+.kontakt__link:hover {
+  background-color: var(--farbe-akzent-hell);
+}
+
+.kontakt__hinweis {
+  color: var(--farbe-text-hell);
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* === Über-mich-Abschnitt === */
+.ueber-uns {
+  margin-bottom: var(--abstand-xl);
+}
+
+.ueber-uns__box {
+  max-width: 60ch;
+}
+
+.ueber-uns__text {
+  color: var(--farbe-text);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.ueber-uns__text + .ueber-uns__text {
+  margin-top: var(--abstand-m);
 }
 
 /* === Lightbox === */
@@ -505,7 +487,7 @@ main {
 
 .impressum__rubrik {
   font-family: var(--schrift-kopf);
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-weight: normal;
   color: var(--farbe-akzent);
   margin-bottom: var(--abstand-s);
@@ -528,18 +510,22 @@ main {
 
 /* === Fußbereich === */
 .site-footer {
-  background-color: var(--farbe-text);
-  color: var(--farbe-linie);
+  background-color: var(--farbe-hintergrund);
+  border-top: 1px solid var(--farbe-linie);
+  color: var(--farbe-text-hell);
   text-align: center;
   padding: var(--abstand-l) 0;
   font-size: 0.85rem;
 }
 
 .site-footer a {
-  color: var(--farbe-linie);
-  text-decoration: underline;
+  color: var(--farbe-akzent);
+  text-decoration: none;
 }
 
+.site-footer a:hover {
+  text-decoration: underline;
+}
 
 /* === Responsiv === */
 @media (max-width: 600px) {
@@ -560,15 +546,11 @@ main {
   }
 
   .torten-galerie__raster {
-    grid-template-columns: 1fr;
-  }
-
-  .site-nav__liste {
-    flex-wrap: wrap;
+    column-count: 1;
   }
 
   .site-nav__link {
-    padding: var(--abstand-s) var(--abstand-m);
-    font-size: 0.8rem;
+    padding: var(--abstand-s) var(--abstand-s);
+    font-size: 0.95rem;
   }
 }
