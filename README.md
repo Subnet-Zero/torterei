@@ -114,3 +114,4 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 | 2026-07-16 | Tortenbestand aus der Kundendatenbank deployt (10 Torten) |
 | 2026-07-16 | Tortenbestand aus der Kundendatenbank deployt (11 Torten) |
 | 2026-07-16 | Lightbox-Schließen springt nicht mehr an den Seitenanfang: Karten haben nun `id`s, Schließen-Links zeigen auf die jeweilige Karte statt auf `#torten` |
+| 2026-07-17 | Behutsames Redesign: wärmere, entsättigte Palette, Unterstrich-Balken unter Überschriften entfernt, linksbündigere Ausrichtung, entschärfte Navigation und Kontakt-Panel; Galerie als Masonry-Wand (`column-count`) mit natürlichen Foto-Proportionen statt hartem 4:3-Beschnitt |
