@@ -210,6 +210,7 @@ main {
   font-weight: normal;
   color: var(--farbe-text);
   margin-bottom: var(--abstand-l);
+  text-align: center;
 }
 
 .kontakt__box .abschnitt-titel,
@@ -227,8 +228,9 @@ main {
   font-family: var(--schrift-kopf);
   font-style: italic;
   font-size: 1.1rem;
-  margin: calc(-1 * var(--abstand-m)) 0 var(--abstand-l);
+  margin: calc(-1 * var(--abstand-m)) auto var(--abstand-l);
   max-width: 40ch;
+  text-align: center;
 }
 
 .torten-galerie__raster {
@@ -330,6 +332,7 @@ main {
   border-radius: var(--radius);
   padding: var(--abstand-l);
   max-width: 640px;
+  margin: 0 auto;
 }
 
 .kontakt__text {
@@ -371,6 +374,7 @@ main {
 
 .ueber-uns__box {
   max-width: 60ch;
+  margin: 0 auto;
 }
 
 .ueber-uns__text {
