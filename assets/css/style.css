@@ -216,6 +216,7 @@ main {
 .kontakt__box .abschnitt-titel,
 .ueber-uns__box .abschnitt-titel {
   margin-bottom: var(--abstand-m);
+  text-align: left;
 }
 
 /* === Torten-Galerie === */
