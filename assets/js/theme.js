@@ -25,4 +25,10 @@
     var active = document.querySelector('[data-theme-set="' + current + '"]');
     if (active) active.classList.add('theme-switch__btn--aktiv');
   });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && location.hash.indexOf('#lb-') === 0) {
+      location.hash = '!';
+    }
+  });
 }());
