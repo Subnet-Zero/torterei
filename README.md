@@ -117,3 +117,4 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 | 2026-07-17 | Behutsames Redesign: wärmere, entsättigte Palette, Unterstrich-Balken unter Überschriften entfernt, linksbündigere Ausrichtung, entschärfte Navigation und Kontakt-Panel; Galerie als Masonry-Wand (`column-count`) mit natürlichen Foto-Proportionen statt hartem 4:3-Beschnitt |
 | 2026-07-21 | Tortenbestand aus der Kundendatenbank deployt (12 Torten) |
 | 2026-08-05 | Tortenbestand aus der Kundendatenbank deployt (12 Torten) |
+| 2026-08-26 | Tortenbestand aus der Kundendatenbank deployt (17 Torten) |
