@@ -121,3 +121,4 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 | 2026-08-26 | Tortenbestand aus der Kundendatenbank deployt (17 Torten) |
 | 2026-08-26 | Tortenbestand aus der Kundendatenbank deployt (17 Torten) |
 | 2026-08-26 | Lightbox-Schließen springt nicht mehr zur Galerie-Überschrift: Schließen-Links (Overlay und ✕) zeigen auf `#!` statt `#torten` — der Fix vom 16.07. war durch den Kundendatenbank-Deploy überschrieben worden; der Deploy-Generator muss ebenfalls `#!` ausgeben |
+| 2026-08-26 | Lightbox lässt sich mit der Escape-Taste schließen (`assets/js/theme.js`; funktioniert unabhängig vom Kundendatenbank-Deploy) |
