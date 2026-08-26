@@ -106,6 +106,7 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 | 2026-06-13 | SVG-Favicon (Torten-Motiv) hinzugefügt und auf allen Seiten verlinkt |
 | 2026-06-13 | CSS aufgeräumt: leere Regelblöcke und veraltete Kommentare entfernt |
 | 2026-07-11 | Automatisiertes Deployment per GitHub Actions über SSH/rsync eingerichtet (`.github/workflows/deploy.yml`); GitHub Pages abgelöst |
+| 2026-08-26 | Texte angepasst: Überschrift „Meine bisherigen Torten" entfernt, Preishinweis im Kontaktbereich entfernt, „kleinsten" aus dem Galerie-Intro gestrichen, Handynummer im Impressum entfernt |
 | 2026-07-11 | Tortenbestand aus der Kundendatenbank deployt (12 Torten) |
 | 2026-07-11 | Tortenbestand aus der Kundendatenbank deployt (12 Torten) |
 | 2026-07-11 | Karten-Struktur dokumentiert: Torten-Name ist nicht mehr optional (immer vorhanden), Anlass und „Überreicht am" bleiben optional |
