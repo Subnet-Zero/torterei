@@ -50,7 +50,7 @@ torterei/
 ```html
 <div class="torte-card">
   <a href="#lb-[name]-1" class="torte-card__bild-link">
-    <img class="torte-card__bild" src="assets/images/torte-[name]-1.png" alt="[Name]" loading="lazy">
+    <img class="torte-card__bild" src="assets/images/torte-[name]-1.png" alt="[Name]" width="[Breite]" height="[Höhe]" loading="lazy">
   </a>
   <div class="torte-card__info">
     <h3 class="torte-card__name">[Name]</h3>

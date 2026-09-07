@@ -263,17 +263,6 @@ main {
   transition: transform 0.4s ease;
 }
 
-.torte-card__bild--platzhalter {
-  background-color: var(--farbe-linie);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  aspect-ratio: 4 / 3;
-  color: var(--farbe-text-hell);
-  font-size: 0.85rem;
-  font-style: italic;
-}
-
 .torte-card__info {
   padding: var(--abstand-m) var(--abstand-l) var(--abstand-l);
 }
