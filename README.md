@@ -86,6 +86,35 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 
 - **Domain**: Noch nicht registriert (Stand: Juni 2026)
 
+### Logo
+
+Gewählt wurde Variante **„Handschrift"** (`d-handschrift`): Schreibschrift
+„Torterei", Herz als Trenner, „MARIENFELDT" in gesperrten Versalien. Sie
+sitzt seit September 2026 als Inline-SVG im Seitenkopf (`.site-header__titel`)
+aller drei Seiten und folgt über `currentColor` sowie die Klasse
+`.site-header__logo-herz` (`fill: var(--farbe-akzent)`) automatisch dem
+Hell/Dunkel-Schalter. Das SVG steht direkt im HTML statt per `<use>` auf eine
+externe Datei zu verweisen – Browser blockieren externe SVG-Referenzen beim
+direkten Öffnen per `file://`, das Inline-SVG funktioniert dagegen überall.
+
+Unter `assets/logo/` liegen zusätzlich vier weitere, nicht verwendete
+Vorschläge (`a-siegel`, `b-monogramm`, `c-anschnitt`, `e-etagentorte`) als
+Referenz. Je Variante:
+
+| Datei | Zweck |
+|---|---|
+| `avatar-[variante].svg` / `.png` | Quadratischer Avatar (1024 × 1024 px) für Instagram, Facebook, WhatsApp |
+| `logo-[variante].svg` | Horizontales Web-Logo (Vorlage für den Inline-Einbau im Seitenkopf) |
+
+Alle Schriften (Playfair Display, Cormorant Garamond, Great Vibes, Josefin
+Sans – jeweils SIL Open Font License) sind in Pfade umgewandelt, die Logos
+benötigen keine Webfonts.
+
+Der Instagram-/Social-Media-Avatar liegt unter
+`assets/logo/avatar-d-handschrift.png` (1024 × 1024 px, Terrakotta-Hintergrund,
+für runde und eckige Profilbilder geeignet) sowie als `.svg` für größere
+Formate wie Druck.
+
 ---
 
 ## Änderungshistorie
@@ -123,3 +152,5 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 | 2026-08-26 | Lightbox-Schließen springt nicht mehr zur Galerie-Überschrift: Schließen-Links (Overlay und ✕) zeigen auf `#!` statt `#torten` — der Fix vom 16.07. war durch den Kundendatenbank-Deploy überschrieben worden; der Deploy-Generator muss ebenfalls `#!` ausgeben |
 | 2026-08-26 | Lightbox lässt sich mit der Escape-Taste schließen (`assets/js/theme.js`; funktioniert unabhängig vom Kundendatenbank-Deploy) |
 | 2026-09-06 | Tortenbestand aus der Kundendatenbank deployt (21 Torten) |
+| 2026-09-08 | Fünf Logo-Vorschläge (Siegel, Monogramm, Anschnitt, Handschrift, Etagentorte) als Avatar-SVG/PNG und Web-Logo-SVG unter `assets/logo/` abgelegt; noch nicht in den Seitenkopf eingebaut |
+| 2026-09-08 | Logo-Variante „Handschrift" gewählt und als Inline-SVG in den Seitenkopf aller drei Seiten eingebaut (folgt dem Hell/Dunkel-Schalter); veraltete `.site-header__trenner`-Regel entfernt |

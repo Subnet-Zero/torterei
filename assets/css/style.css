@@ -146,16 +146,18 @@ img {
 }
 
 .site-header__titel {
-  font-family: var(--schrift-kopf);
-  font-size: clamp(1.9rem, 5vw, 3.1rem);
-  font-weight: normal;
   color: var(--farbe-text);
-  letter-spacing: 0.01em;
 }
 
-.site-header__trenner {
-  margin: 0 0.3em;
-  color: var(--farbe-akzent);
+.site-header__logo {
+  display: block;
+  height: clamp(2.6rem, 8vw, 4.4rem);
+  width: auto;
+  margin: 0 auto;
+}
+
+.site-header__logo-herz {
+  fill: var(--farbe-akzent);
 }
 
 .site-header__untertitel {
