@@ -86,6 +86,29 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 
 - **Domain**: Noch nicht registriert (Stand: Juni 2026)
 
+### Logo
+
+Unter `assets/logo/` liegen fünf Logo-Vorschläge (Stand: September 2026, noch
+nicht in den Seitenkopf eingebaut). Je Variante:
+
+| Datei | Zweck |
+|---|---|
+| `avatar-[variante].svg` / `.png` | Quadratischer Avatar (1024 × 1024 px) für Instagram, Facebook, WhatsApp |
+| `logo-[variante].svg` | Horizontales Web-Logo für den Seitenkopf; Schrift und Bildmarke nutzen `currentColor`, Akzent Terrakotta |
+
+Varianten: `a-siegel`, `b-monogramm`, `c-anschnitt`, `d-handschrift`,
+`e-etagentorte`. Alle Schriften (Playfair Display, Cormorant Garamond, Great
+Vibes, Josefin Sans – jeweils SIL Open Font License) sind in Pfade umgewandelt,
+die Logos benötigen keine Webfonts.
+
+Einbau ins HTML, damit das Logo dem Hell/Dunkel-Schalter folgt:
+
+```html
+<svg class="site-header__logo" role="img" aria-label="Torterei Marienfeldt">
+  <use href="assets/logo/logo-a-siegel.svg#logo"></use>
+</svg>
+```
+
 ---
 
 ## Änderungshistorie
@@ -123,3 +146,4 @@ ssh-keygen -t ed25519 -f deploy_key -C "github-deploy-torterei" -N ""
 | 2026-08-26 | Lightbox-Schließen springt nicht mehr zur Galerie-Überschrift: Schließen-Links (Overlay und ✕) zeigen auf `#!` statt `#torten` — der Fix vom 16.07. war durch den Kundendatenbank-Deploy überschrieben worden; der Deploy-Generator muss ebenfalls `#!` ausgeben |
 | 2026-08-26 | Lightbox lässt sich mit der Escape-Taste schließen (`assets/js/theme.js`; funktioniert unabhängig vom Kundendatenbank-Deploy) |
 | 2026-09-06 | Tortenbestand aus der Kundendatenbank deployt (21 Torten) |
+| 2026-09-08 | Fünf Logo-Vorschläge (Siegel, Monogramm, Anschnitt, Handschrift, Etagentorte) als Avatar-SVG/PNG und Web-Logo-SVG unter `assets/logo/` abgelegt; noch nicht in den Seitenkopf eingebaut |
