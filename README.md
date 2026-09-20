@@ -154,3 +154,4 @@ Formate wie Druck.
 | 2026-09-06 | Tortenbestand aus der Kundendatenbank deployt (21 Torten) |
 | 2026-09-08 | Fünf Logo-Vorschläge (Siegel, Monogramm, Anschnitt, Handschrift, Etagentorte) als Avatar-SVG/PNG und Web-Logo-SVG unter `assets/logo/` abgelegt; noch nicht in den Seitenkopf eingebaut |
 | 2026-09-08 | Logo-Variante „Handschrift" gewählt und als Inline-SVG in den Seitenkopf aller drei Seiten eingebaut (folgt dem Hell/Dunkel-Schalter); veraltete `.site-header__trenner`-Regel entfernt |
+| 2026-09-20 | Tortenbestand aus der Kundendatenbank deployt (21 Torten) |
