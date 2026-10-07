@@ -156,3 +156,4 @@ Formate wie Druck.
 | 2026-09-08 | Logo-Variante „Handschrift" gewählt und als Inline-SVG in den Seitenkopf aller drei Seiten eingebaut (folgt dem Hell/Dunkel-Schalter); veraltete `.site-header__trenner`-Regel entfernt |
 | 2026-09-20 | Tortenbestand aus der Kundendatenbank deployt (21 Torten) |
 | 2026-10-01 | Tortenbestand aus der Kundendatenbank deployt (22 Torten) |
+| 2026-10-07 | Tortenbestand aus der Kundendatenbank deployt (23 Torten) |
