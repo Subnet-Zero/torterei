@@ -115,6 +115,27 @@ Der Instagram-/Social-Media-Avatar liegt unter
 für runde und eckige Profilbilder geeignet) sowie als `.svg` für größere
 Formate wie Druck.
 
+### Sticker
+
+Unter `assets/stickers/` liegen drei druckfertige Sticker zum Verpacken
+(Schachteln, Tüten, Dankeskarten), aufbauend auf Logo-Variante „Handschrift".
+Je Datei als `.svg` (Vektor, Schrift in Pfade umgewandelt, Maße in echten
+Millimetern im `viewBox`) und als `.png` (1200 dpi, mit eingebetteter
+Auflösungsangabe, falls ein Druckdienstleister kein SVG annimmt):
+
+| Datei | Maß | Beschreibung |
+|---|---|---|
+| `sticker-a-siegel` | Ø 40 mm Schnitt, 42 mm Anschnitt | Runder Hauptsticker, voller Schriftzug auf Terrakotta-Grund, cremefarbener Innenring. Zum Verschließen von Schachteln/Tüten. |
+| `sticker-b-konturschnitt` | 68 × 19 mm, Konturschnitt | Nur „Torterei" mit Herz, terrakotta auf transparentem Grund. Als schmale Bauchbinde über Falz oder Geschenkband. |
+| `sticker-c-dankeschoen` | Ø 30 mm Schnitt, 32 mm Anschnitt | „Danke" in Schreibschrift mit kleinem Herz, cremefarbener Grund mit Terrakotta-Ring. Für Rechnungen oder Dankeskarten. |
+
+Die eigentliche Schnittkontur erzeugt die Druckerei beim Hochladen automatisch
+(bei A/C aus der Kreisform, bei B aus dem Transparenzkanal) – es ist keine
+separate Stanzkontur-Datei nötig. Empfohlenes Material: weißes Vinyl, matt
+oder glänzend laminiert, da es Fett und Feuchtigkeit besser verträgt als
+unbeschichtetes Papier. Schriften (Great Vibes, Josefin Sans – SIL Open Font
+License) sind in Pfade umgewandelt, die Dateien benötigen keine Webfonts.
+
 ---
 
 ## Änderungshistorie
@@ -154,3 +175,4 @@ Formate wie Druck.
 | 2026-09-06 | Tortenbestand aus der Kundendatenbank deployt (21 Torten) |
 | 2026-09-08 | Fünf Logo-Vorschläge (Siegel, Monogramm, Anschnitt, Handschrift, Etagentorte) als Avatar-SVG/PNG und Web-Logo-SVG unter `assets/logo/` abgelegt; noch nicht in den Seitenkopf eingebaut |
 | 2026-09-08 | Logo-Variante „Handschrift" gewählt und als Inline-SVG in den Seitenkopf aller drei Seiten eingebaut (folgt dem Hell/Dunkel-Schalter); veraltete `.site-header__trenner`-Regel entfernt |
+| 2026-10-24 | Drei druckfertige Sticker (Siegel, Konturschnitt, Dankeschön-Mini) als SVG/PNG unter `assets/stickers/` abgelegt |
