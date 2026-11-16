@@ -159,3 +159,4 @@ Formate wie Druck.
 | 2026-10-07 | Tortenbestand aus der Kundendatenbank deployt (23 Torten) |
 | 2026-10-08 | Tortenbestand aus der Kundendatenbank deployt (23 Torten) |
 | 2026-11-16 | Tortenbestand aus der Kundendatenbank deployt (25 Torten) |
+| 2026-11-16 | Tortenbestand aus der Kundendatenbank deployt (25 Torten) |
