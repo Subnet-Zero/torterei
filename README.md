@@ -161,3 +161,4 @@ Formate wie Druck.
 | 2026-11-16 | Tortenbestand aus der Kundendatenbank deployt (25 Torten) |
 | 2026-11-16 | Tortenbestand aus der Kundendatenbank deployt (25 Torten) |
 | 2026-11-21 | Tortenbestand aus der Kundendatenbank deployt (26 Torten) |
+| 2026-11-21 | Tortenbestand aus der Kundendatenbank deployt (27 Torten) |
